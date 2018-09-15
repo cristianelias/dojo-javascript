@@ -1,7 +1,7 @@
 class Dojo {
   constructor({ sensei = 'diego' }) {
-    this.sensei = sensei;
+    this.sensei = sensei
   }
 }
 
-export default Dojo;
+export default Dojo
