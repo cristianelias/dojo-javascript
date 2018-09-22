@@ -1,6 +1,17 @@
+const DEFAULT_SENSEI = 'Diego Sanchez'
+
 class Dojo {
-  constructor({ sensei = 'diego' }) {
-    this.sensei = sensei
+  constructor(sensei = DEFAULT_SENSEI) {
+    Object.assign(
+      this,
+      {
+        sensei,
+      }
+    )
+  }
+
+  getSensei() {
+    return this.sensei
   }
 }
 
